@@ -4,13 +4,11 @@
 $(window).on("load", sidenVises);
 
 function sidenVises() {
-    console.log("sidenVises")
-    $(".container1").on("click", gaaTilTema1);
+    console.log("sidenVises");
+    $(".logo").on("click", spinLogo);
 }
 
-function gaaTilTema1() {
-    console.log("Gå til Tema1");
-    $("nav").toggleClass("hidden");
-    // skift kanppen frem og tilbage mellem kryds
-    $(".menubutton").toggleClass("kryds");
+function spinLogo() {
+    console.log("Logo spinnes");
+    $(".logo").toggleClass("spin");
 }
