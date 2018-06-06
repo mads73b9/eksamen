@@ -1,3 +1,5 @@
+/*-------------------- JAVASCRIPT --------------*/
+
 .spin {
     animation-name: spin_kf;
     animation-duration: 3s;
@@ -16,7 +18,7 @@
 
 
 
-
+/* ------------------- GENEREL STYLING ----------- */
 
 body {
     background-color: #333;
@@ -26,9 +28,30 @@ body {
     color: aqua;
 }
 
+h1 {
+    font-family: "Roboto", bold;
+    text-align: center;
+    font-size: 4em;
+    color: aqua
+}
+
+h2 {
+    color: aqua;
+}
+
+p {
+    color: aqua;
+}
+
 footer {
+    color: aqua;
+    margin-left: 20px;
     margin-top: 20px;
 }
+
+
+
+/*--------------------- NAV-MENU --------------- */
 
 .nav_menu ul {
     list-style-type: none;
@@ -38,11 +61,11 @@ footer {
     background-color: aqua;
 }
 
-.nav_menu a {
+a {
     text-decoration: none;
 }
 
-.nav_menu a:visited {
+a:visited {
     color: #333;
 }
 
@@ -57,6 +80,9 @@ footer {
     background-color: #333;
     color: aqua;
 }
+
+
+/* --------------------- TOP-BAR ------------------*/
 
 .top_bar {
     display: flex;
@@ -84,35 +110,11 @@ footer {
     justify-content: center;
 }
 
-h1 {
-    font-family: "Roboto", bold;
-    text-align: center;
-    font-size: 4em;
-    color: aqua
-}
 
-h2 {
-    color: aqua;
-}
 
-p {
-    color: aqua;
-}
 
-footer {
-    color: aqua;
-        margin-left: 20px;
-}
 
-.top {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.bottom {
-    display: flex;
-    flex-wrap: wrap;
-}
+/*--------------------- CV ----------------------*/
 
 .container_cv {
     display: flex;
@@ -123,21 +125,40 @@ footer {
 }
 
 .text_cv {
-    width: 50%;
+    width: 70%;
 }
 
 .billede_cv {
-    width: 50%;
+    width: 30%;
     flex-grow: 1;
-    flex-basis: 200px;
-    margin-right: 30px;
-    margin-left: 30px;
+    flex-basis: 100px;
+    margin-right: 60px;
 }
 
 .billede_cv img {
     width: 100%;
     flex-grow: 1;
     flex-basis: 200px;
+}
+
+.faerdigheder {
+    display: flex;
+    justify-content: space-between
+}
+
+.cv_left {}
+
+
+/* ------------------ FORSIDE ------------ */
+
+.top {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -151,8 +172,6 @@ footer {
     position: relative;
     width: 50%;
 }
-
-
 
 .container img {
     opacity: 1;
@@ -183,37 +202,15 @@ footer {
 }
 
 .text {
-    /*background-color: #4CAF50;*/
     color: aqua;
     font-size: 5em;
     padding: 20px 20px;
     text-align: center;
-    font-family: "Roboto", bold;
+    font-family: "Roboto";
     font-weight: 700;
 }
 
 
-
-/*
-
-
-
-.bottom {
-    display: flex;
-    justify-content: space-around;
-}
-
-.bottom img {
-    width: 45vw;
-    margin: 10px;
-}
-
-.text1 {
-    color: green;
-    font-size: 40px;
-}
-
-*/
 
 /*------------------- Media Qeury--------------*/
 
