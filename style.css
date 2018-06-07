@@ -83,10 +83,25 @@ a:visited {
 
 /* --------------------- TOP-BAR ------------------*/
 
+.top_bar_cv {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.overskrift_cv {
+    width: 20vw;
+}
+
+.top_bar_cv .logo {
+    width: 20vw;
+}
+
 .top_bar {
     display: flex;
     flex-wrap: wrap-reverse;
-    margin-top: 15px;
+    margin-top: 50px;
     justify-content: center;
 }
 
@@ -115,14 +130,6 @@ a:visited {
 
 /*--------------------- CV ----------------------*/
 
-.container_cv_top {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    position: relative;
-    width: 100%;
-    margin: 40px 20px 40px;
-}
-
 .text_cv {
     width: 50%;
     flex-grow: 1;
@@ -132,7 +139,9 @@ a:visited {
     width: 50%;
     flex-grow: 1;
     flex-basis: 100px;
-    padding-right: 8vw;
+    margin-left: 15vw;
+    padding-left: 8vw;
+    max-width: 20vw;
 }
 
 .billede_cv img {
@@ -141,25 +150,41 @@ a:visited {
     flex-basis: 200px;
 }
 
+.container_cv_middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cv_middle_left {
+    width: 40vw;
+}
+
+.cv_middle_right {
+    width: 45vw;
+    padding-left: 50px
+}
+
+
 .container_cv_bottom {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.cv_left {
+.cv_bottom_left {
     width: 33vw;
     flex-grow: 1;
     flex-basis: 265px;
 }
 
-.cv_middle {
+.cv_bottom_middle {
     width: 33vw;
     flex-grow: 1;
     flex-basis: 265px;
 }
 
-.cv_right {
+.cv_bottom_right {
     width: 33vw;
     flex-grow: 1;
     flex-basis: 265px;
