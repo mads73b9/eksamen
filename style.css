@@ -4,7 +4,6 @@
     animation-name: spin_kf;
     animation-duration: 3s;
     animation-iteration-count: 1;
-
 }
 
 @keyframes spin_kf {
@@ -125,14 +124,15 @@ a:visited {
 }
 
 .text_cv {
-    width: 70%;
+    width: 50%;
+    flex-grow: 1;
 }
 
 .billede_cv {
-    width: 30%;
+    width: 50%;
     flex-grow: 1;
     flex-basis: 100px;
-    margin-right: 60px;
+    padding-right: 8vw;
 }
 
 .billede_cv img {
@@ -150,19 +150,19 @@ a:visited {
 .cv_left {
     width: 33vw;
     flex-grow: 1;
-    flex-basis: 200px;
+    flex-basis: 265px;
 }
 
 .cv_middle {
     width: 33vw;
     flex-grow: 1;
-    flex-basis: 200px;
+    flex-basis: 265px;
 }
 
 .cv_right {
     width: 33vw;
     flex-grow: 1;
-    flex-basis: 200px;
+    flex-basis: 265px;
 }
 
 
@@ -184,7 +184,7 @@ a:visited {
     border-style: solid;
     border-color: aqua;
     border-width: 10px;
-    margin: 2px;
+    margin: 20px;
     flex-grow: 1;
     flex-basis: 300px;
     position: relative;
@@ -228,7 +228,32 @@ a:visited {
     font-weight: 700;
 }
 
+/*------------------- TEMA 1 ------------------*/
 
+.tema1_top {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    justify-content: space-around;
+    margin: 50px;
+
+
+}
+
+.tema1_top_text {
+    width: 30vw;
+}
+
+.tema1_top_billede1,
+.tema1_top_billede2 {
+    width: 20%;
+}
+
+.tema1_top_billede1 img,
+.tema1_top_billede2 img {
+    width: 100%;
+}
 
 /*------------------- Media Qeury--------------*/
 
