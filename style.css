@@ -144,7 +144,7 @@ a:visited {
 .container_cv_bottom {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .cv_left {
@@ -233,27 +233,92 @@ a:visited {
 .tema1_top {
     display: flex;
     flex-wrap: wrap;
-    position: relative;
     width: 100%;
     justify-content: space-around;
-    margin: 50px;
-
-
 }
 
 .tema1_top_text {
-    width: 30vw;
+    width: 40vw;
+    flex-basis: 300px;
+    margin: 10px;
+}
+
+.tema1_top_text p {
+    margin-bottom: 40px;
 }
 
 .tema1_top_billede1,
-.tema1_top_billede2 {
-    width: 20%;
+.tema1_top_billede2,
+.tema1_top_billede3 {
+    width: 15vw;
+    flex-basis: 300px;
+    margin: 10px;
 }
 
 .tema1_top_billede1 img,
-.tema1_top_billede2 img {
+.tema1_top_billede2 img,
+.tema1_top_billede3 img {
     width: 100%;
 }
+
+a {
+    text-decoration: none;
+    color: aqua;
+}
+
+a:visited {
+    text-decoration: none;
+    color: aqua;
+}
+
+
+
+/*------------------- TEMA 3 CONTENT ----------*/
+
+.cphdox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.cphdox_text {
+    width: 45vw;
+    margin: 10px;
+}
+
+.cphdox_video {
+    width: 55vw;
+    margin: 10px;
+    flex-basis: 570px;
+    margin-top: 50px;
+}
+
+.gram_kaffe {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.gram_video {
+    width: 55vw;
+    margin: 10px;
+    flex-basis: 570px;
+    margin-top: 50px;
+}
+
+.gram_text {
+    width: 45vw;
+    margin: 10px;
+}
+
+.gram_text p {
+    margin-bottom: 40px;
+}
+
+
+
 
 /*------------------- Media Qeury--------------*/
 
