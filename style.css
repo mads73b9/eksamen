@@ -40,6 +40,7 @@ h2 {
 
 p {
     color: aqua;
+    /*line-height: 25px;*/
 }
 
 footer {
@@ -48,7 +49,9 @@ footer {
     margin-top: 20px;
 }
 
-
+li {
+    line-height: 30px;
+}
 
 /*--------------------- NAV-MENU --------------- */
 
@@ -286,7 +289,7 @@ a:visited {
     font-weight: 700;
 }
 
-/*------------------- TEMA 1 ------------------*/
+/*------------------- TEMA 1 WEBDESIGN ------------------*/
 
 .tema1_top {
     display: flex;
@@ -330,6 +333,61 @@ a:visited {
 }
 
 
+/*------------------- TEMA 2 ANIMATION --------*/
+
+.animation_top,
+.baggrundsdesign,
+.baggrundsskitser,
+.sexogsamfund {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.animation_top_text,
+.karakterdesign_text,
+.baggrundsdesign_text,
+.lyd_text,
+.sos_text {
+    width: 35vw;
+}
+
+.animation_top_billede,
+.karakterdesign_billede,
+.baggrundsdesign_billede,
+.sos_billede {
+    flex-basis: 800px;
+    position: relative;
+}
+
+.animation_top_billede img,
+.karakterdesign_billede img,
+.baggrundsdesign_billede img,
+.baggrundsskitser img,
+.lyd_billede img,
+.sos_billede img {
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    object-fit: cover;
+}
+
+.karakterdesign,
+.lydsiden {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.baggrundsskitse_left,
+.baggrundsskitse_middle,
+.baggrundsskitse_right {
+    flex-basis: 450px;
+    position: relative;
+    padding: 15px;
+}
 
 /*------------------- TEMA 3 CONTENT ----------*/
 
@@ -427,6 +485,44 @@ a:visited {
 @media screen and (max-width: 366px) {
     .top_bar {
         margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    .animation_top_text,
+    .karakterdesign_text,
+    .baggrundsdesign_text,
+    .lyd_text,
+    .sos_text {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .animation_top_billede,
+    .karakterdesign_billede,
+    .baggrundsdesign_billede,
+    .baggrundsskitse_left,
+    .baggrundsskitse_middle,
+    .baggrundsskitse_right,
+    .lyd_billede,
+    .sos_billede {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .animation_top_billede,
+    .karakterdesign_billede,
+    .baggrundsdesign_billede,
+    .baggrundsskitse_left,
+    .baggrundsskitse_middle,
+    .baggrundsskitse_right,
+    .lyd_billede,
+    .sos_billede {
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
 
