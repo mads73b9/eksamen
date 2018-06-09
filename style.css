@@ -300,7 +300,7 @@ a:visited {
 
 .tema1_top_text {
     width: 40vw;
-    flex-basis: 300px;
+
     margin: 10px;
 }
 
@@ -433,7 +433,10 @@ a:visited {
     margin-bottom: 40px;
 }
 
-
+iframe {
+    width: 650px;
+    height: 365px;
+}
 
 
 /*------------------- Media Qeury--------------*/
@@ -489,11 +492,14 @@ a:visited {
 }
 
 @media screen and (max-width: 1270px) {
+    .tema1_top_text,
     .animation_top_text,
     .karakterdesign_text,
     .baggrundsdesign_text,
     .lyd_text,
-    .sos_text {
+    .sos_text,
+    .cphdox_text,
+    .gram_text {
         width: 80vw;
     }
 }
@@ -526,10 +532,10 @@ a:visited {
     }
 }
 
-/*
-@media screen and (max-width: 1619px) {
-    .cv_middle, .cv_right {
-        padding-top: 70px;
+
+@media screen and (max-width: 775px) {
+    iframe {
+        width: 382px;
+        height: 214px;
     }
 }
-*/
