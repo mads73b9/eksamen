@@ -92,9 +92,7 @@ hr {
     background-color: #333;
 }
 
-figcaption {
-    font-size:
-}
+
 
 /* --------------------- TOP-BAR ------------------*/
 
@@ -427,7 +425,7 @@ a:visited {
 .kea_app_top {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 50px;
 
 }
@@ -435,8 +433,12 @@ a:visited {
 .kea_app_middle {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     max-width: 100%;
+}
+
+.kea_app_billede {
+    text-align: center;
 }
 
 /*.kea_app_billede,
@@ -489,7 +491,7 @@ a:visited {
 .joe_top_text_right {
     flex-grow: 1;
     width: 20vw;
-    padding: 50px 30px;
+    padding: 90px 30px;
     flex-basis: 350px;
 
 }
@@ -608,5 +610,17 @@ a:visited {
 @media screen and (max-width: 720px) {
     .kea_app_text {
         width: 70vw;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .joe_top_text_right,
+    .joe_top_text_right li,
+    .joe_top_text_right ul,
+    .joe_top_text_left,
+    .joe_top_text_left li,
+    .joe_top_text_left ul {
+        padding: 0px 30px;
+        margin: 0px 30px;
     }
 }
