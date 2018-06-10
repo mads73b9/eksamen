@@ -22,7 +22,7 @@
 body {
     background-color: #333;
     font-family: "Roboto";
-    margin-left: 10px;
+    margin-left: 40px;
     margin-right: 10px;
     color: aqua;
 }
@@ -416,38 +416,36 @@ a:visited {
 
 /*------------------- Tema 4 - UX -------------*/
 
-.kea_app_top,
+.kea_app_top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    max-width: 100%;
+}
+
 .kea_app_middle {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /*margin-top: 50px;
-    width: 100%;*/
-}
-
-.kea_app_text {
-    width: 30vw;
-    margin: 10px;
-    flex-grow: 2;
-
+    max-width: 100%;
 }
 
 .kea_app_billede {
-    /*flex-grow: 1;*/
+    flex-grow: 1;
     position: relative;
-    /*  margin: 0px 40px 20px;*/
+    margin: 0px 40px 20px;
     flex-basis: 100px;
-    /*   align-items: center;*/
+    align-items: center;
+    max-width: 100%;
 }
 
 .kea_app_text {
     width: 100%;
     height: 100%;
-    max-width: 800px;
-    object-fit: cover;
+    max-width: 35vw;
 }
 
-.kea_app_embed {}
 
 
 
