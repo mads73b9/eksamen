@@ -55,8 +55,12 @@ li {
 
 hr {
     border-color: aqua;
+    margin-top: 10px;
 }
 
+figcaption {
+    text-align: left;
+}
 
 /*--------------------- NAV-MENU --------------- */
 
@@ -425,7 +429,7 @@ a:visited {
 .kea_app_top {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 50px;
 
 }
@@ -433,7 +437,7 @@ a:visited {
 .kea_app_middle {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 100%;
 }
 
@@ -502,7 +506,47 @@ a:visited {
     padding-top: 40px;
 }
 
+.joejuice_middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+.joejuice_middle_billede {
+    text-align: center;
+    padding: 0px 20px;
+    flex-basis: 350px;
+    max-width: 400px;
+
+}
+
+.joejuice_middle_billede img {
+    max-width: 400px;
+}
+
+.joejuice_middle_billede figcaption {
+    margin: 0px;
+}
+
+.joejuice_middle_text,
+.joejuice_bottom_text {
+    width: 25vw;
+}
+
+.joejuice_bottom {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.joejuice_bottom_left,
+.joejuice_bottom_right {
+    text-align: center;
+    padding: 0px 20px;
+    flex-basis: 350px;
+    max-width: 400px;
+}
 
 /*------------------- Media Qeury--------------*/
 
@@ -566,7 +610,10 @@ a:visited {
     .cphdox_text,
     .gram_text,
     .kea_app_text,
-    .kea_app_middle_text {
+    .kea_app_middle_text,
+    .joe_top_text_right,
+    .joejuice_middle_text,
+    .joejuice_bottom_text {
         width: 80vw;
     }
 }
