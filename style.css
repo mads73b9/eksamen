@@ -53,6 +53,11 @@ li {
     line-height: 30px;
 }
 
+hr {
+    border-color: aqua;
+}
+
+
 /*--------------------- NAV-MENU --------------- */
 
 .nav_menu {
@@ -87,7 +92,9 @@ li {
     background-color: #333;
 }
 
-
+figcaption {
+    font-size:
+}
 
 /* --------------------- TOP-BAR ------------------*/
 
@@ -285,6 +292,7 @@ li {
     width: 15vw;
     flex-basis: 300px;
     margin: 10px;
+    text-align: center;
 }
 
 .tema1_top_billede1 img,
@@ -419,34 +427,78 @@ a:visited {
 .kea_app_top {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 50px;
-    max-width: 100%;
+
 }
 
 .kea_app_middle {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     max-width: 100%;
 }
 
-.kea_app_billede {
+/*.kea_app_billede,
+.kea_app_billede_top,
+    {
     flex-grow: 1;
     position: relative;
-    margin: 0px 40px 20px;
+    margin: 0px 10px 20px;
     flex-basis: 100px;
     align-items: center;
     max-width: 100%;
+}*/
+
+.kea_app_billede_top {
+    margin: 5px;
+    text-align: center;
+}
+
+.kea_app_billede_top img {
+    width: 100%;
 }
 
 .kea_app_text {
-    width: 100%;
-    height: 100%;
-    max-width: 35vw;
+    width: 35vw;
+    padding-right: 25px;
 }
 
+.kea_app_middle_text {
+    width: 25vw;
+}
 
+.kea_app_middle_text img {
+    width: 100%;
+}
+
+.joejuice_top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.joe_top_text_left {
+    flex-grow: 1;
+    width: 20vw;
+    padding: 0px 30px;
+    flex-basis: 350px;
+}
+
+.joe_top_text_right {
+    flex-grow: 1;
+    width: 20vw;
+    padding: 50px 30px;
+    flex-basis: 350px;
+
+}
+
+.joe_top_logo {
+    flex-grow: 2;
+    text-align: center;
+    padding-top: 40px;
+}
 
 
 
@@ -511,7 +563,8 @@ a:visited {
     .sos_text,
     .cphdox_text,
     .gram_text,
-    .kea_app_text {
+    .kea_app_text,
+    .kea_app_middle_text {
         width: 80vw;
     }
 }
@@ -549,5 +602,11 @@ a:visited {
     iframe {
         width: 382px;
         height: 214px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .kea_app_text {
+        width: 70vw;
     }
 }
