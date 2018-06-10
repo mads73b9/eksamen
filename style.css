@@ -87,35 +87,7 @@ li {
     background-color: #333;
 }
 
-/*
-.nav_menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: aqua;
-}
 
-a {
-    text-decoration: none;
-}
-
-a:visited {
-    color: #333;
-}
-
-.nav_menu li a {
-    display: inline;
-    padding: 10px;
-    float: left;
-    color: #333;
-}
-
-.nav_menu li a:hover {
-    background-color: #333;
-    color: aqua;
-}
-*/
 
 /* --------------------- TOP-BAR ------------------*/
 
@@ -300,7 +272,6 @@ a:visited {
 
 .tema1_top_text {
     width: 40vw;
-
     margin: 10px;
 }
 
@@ -384,9 +355,9 @@ a:visited {
 .baggrundsskitse_left,
 .baggrundsskitse_middle,
 .baggrundsskitse_right {
-    flex-basis: 450px;
+    flex-basis: 600px;
     position: relative;
-    padding: 15px;
+
 }
 
 .sexogsamfund {
@@ -437,32 +408,43 @@ a:visited {
     margin-bottom: 40px;
 }
 
-iframe {
+.cphdox_video iframe,
+.gram_kaffe iframe {
     width: 650px;
     height: 365px;
 }
 
 /*------------------- Tema 4 - UX -------------*/
 
-.kea_app_top {
+.kea_app_top,
+.kea_app_middle {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 50px;
-    width: 100%;
+    /*margin-top: 50px;
+    width: 100%;*/
 }
 
 .kea_app_text {
     width: 30vw;
     margin: 10px;
+    flex-grow: 2;
 
 }
 
 .kea_app_billede {
+    /*flex-grow: 1;*/
     position: relative;
-    margin: 0px 40px 20px;;
+    /*  margin: 0px 40px 20px;*/
+    flex-basis: 100px;
+    /*   align-items: center;*/
+}
 
-    max-width: 100%;
+.kea_app_text {
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    object-fit: cover;
 }
 
 .kea_app_embed {}
